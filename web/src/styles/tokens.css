@@ -1,0 +1,58 @@
+:root {
+  --lavender: #9d8df1;
+  --lavender-light: #b1a2f3;
+  --lavender-tint: #eeeafe;
+  --mint: #a8e6cf;
+  --mint-tint: #e9f8f1;
+  --peach: #ffd3b6;
+  --peach-accent: #ffabab;
+  --peach-tint: #fff0e7;
+  --page: #f9f8f6;
+  --page-alt: #f4f6f8;
+  --surface: #ffffff;
+  --slate: #626a73;
+  --border: #e2e8f0;
+  --ink: #30313b;
+  --deep-purple: #4d466d;
+  --orchid: #af86b9;
+  --sage: #7c9a6b;
+  --focus-ring: 0 0 0 2px var(--lavender), 0 0 0 4px var(--deep-purple);
+  --type-xs: 12px;
+  --type-sm: 13.5px;
+  --type-base: 15px;
+  --type-lg: 17px;
+  --type-xl: 20px;
+  --type-2xl: 24px;
+  --type-3xl: 30px;
+  --type-4xl: 38px;
+}
+
+@theme inline {
+  --color-primary: var(--lavender);
+  --color-primary-light: var(--lavender-light);
+  --color-primary-tint: var(--lavender-tint);
+  --color-success: var(--mint);
+  --color-success-tint: var(--mint-tint);
+  --color-promotion: var(--peach);
+  --color-promotion-accent: var(--peach-accent);
+  --color-promotion-tint: var(--peach-tint);
+  --color-page: var(--page);
+  --color-page-alt: var(--page-alt);
+  --color-surface: var(--surface);
+  --color-slate: var(--slate);
+  --color-border: var(--border);
+  --color-ink: var(--ink);
+  --color-deep-purple: var(--deep-purple);
+  --color-orchid: var(--orchid);
+  --color-sage: var(--sage);
+  --font-sans: var(--font-body);
+  --font-serif: var(--font-heading);
+  --text-xs: var(--type-xs);
+  --text-sm: var(--type-sm);
+  --text-base: var(--type-base);
+  --text-lg: var(--type-lg);
+  --text-xl: var(--type-xl);
+  --text-2xl: var(--type-2xl);
+  --text-3xl: var(--type-3xl);
+  --text-4xl: var(--type-4xl);
+}

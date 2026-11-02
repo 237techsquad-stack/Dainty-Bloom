@@ -1,0 +1,147 @@
+.auth-card--compact {
+  display: block;
+  width: min(100%, 420px);
+  min-height: 0;
+  padding: 24px;
+  overflow: visible;
+}
+
+.admin-login-page {
+  background:
+    radial-gradient(
+      ellipse at 12% 18%,
+      rgb(177 162 243 / 18%),
+      transparent 42%
+    ),
+    var(--page);
+}
+
+.admin-login-card {
+  display: grid;
+  width: min(100%, 960px);
+  grid-template-columns: minmax(0, 0.43fr) minmax(0, 0.57fr);
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: 1.25rem;
+  background: var(--surface);
+  box-shadow: 0 20px 60px rgb(48 49 59 / 9%);
+}
+
+.admin-login-brand-panel {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 4rem;
+  padding: clamp(1.5rem, 4vw, 3.25rem);
+  background:
+    radial-gradient(
+      circle at 90% 88%,
+      rgb(168 230 207 / 36%),
+      transparent 11rem
+    ),
+    var(--lavender-tint);
+}
+
+.admin-login-brand-panel .brand {
+  align-self: flex-start;
+  font-size: 1.35rem;
+}
+
+.admin-login-brand-panel .brand img {
+  width: 40px;
+  height: 40px;
+}
+
+.admin-login-brand-panel h2 {
+  max-width: 15ch;
+  margin: 0.7rem 0;
+  color: var(--deep-purple);
+  font-family: var(--font-heading), Georgia, serif;
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  line-height: 1.08;
+}
+
+.admin-login-brand-note {
+  max-width: 30ch;
+  margin: 0;
+  color: var(--ink);
+  line-height: 1.7;
+}
+
+.admin-login-eyebrow {
+  margin: 0;
+  color: var(--deep-purple);
+  font-size: var(--type-xs);
+  font-weight: 700;
+  letter-spacing: 0.1em;
+}
+
+.admin-login-form-panel {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  justify-content: center;
+  padding: clamp(1.5rem, 5vw, 4.25rem);
+}
+
+.admin-login-form-panel .auth-form-content {
+  width: min(100%, 420px);
+  margin-inline: auto;
+}
+
+.admin-login-form-panel .auth-form-content h1 {
+  margin-top: 0;
+  font-family: var(--font-heading), Georgia, serif;
+  font-size: clamp(2rem, 4vw, 2.5rem);
+}
+
+.admin-login-form-panel .auth-intro {
+  margin-bottom: 1.5rem;
+}
+
+.admin-login-form-panel .auth-form {
+  gap: 1rem;
+}
+
+.admin-login-form-panel .auth-link-row {
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.admin-login-store-link {
+  width: fit-content;
+  margin: 1.5rem auto 0;
+  color: var(--deep-purple);
+  font-size: var(--type-sm);
+  text-decoration: none;
+}
+
+.admin-login-store-link:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 700px) {
+  .admin-login-card {
+    width: min(100%, 500px);
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .admin-login-brand-panel {
+    gap: 1.5rem;
+    padding: 1.5rem;
+  }
+
+  .admin-login-brand-panel h2 {
+    max-width: 24ch;
+    font-size: 1.8rem;
+  }
+
+  .admin-login-brand-note {
+    font-size: var(--type-sm);
+  }
+
+  .admin-login-form-panel {
+    padding: 1.75rem 1.5rem;
+  }
+}
